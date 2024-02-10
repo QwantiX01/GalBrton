@@ -1,3 +1,5 @@
+import ContactForm from "../components/Forms/ContactForm";
+
 interface ContactProps {}
 
 const Contact = ({}: ContactProps) => {
@@ -11,6 +13,7 @@ const Contact = ({}: ContactProps) => {
           Наша команда завжди готова відповісти на будь-яке ваше запитання. Ми з
           нетерпінням чекаємо на ваш дзвінок
         </p>
+        <ContactForm />
       </main>
     </>
   );
