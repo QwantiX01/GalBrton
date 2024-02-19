@@ -1,9 +1,9 @@
 export const headerLinks = [
-  { content: "Головна", link: "/home" },
-  { content: "Продукти", link: "#" },
-  { content: "Проєкти", link: "#" },
-  { content: "Про нас", link: "#" },
-  { content: "З'єднатися з нами", link: "/contact", outline: true },
+  {content: "Головна", link: "/home"},
+  {content: "Продукти", link: "/products"},
+  {content: "Проєкти", link: "#"},
+  {content: "Про нас", link: "#"},
+  {content: "З'єднатися з нами", link: "/contact", outline: true},
 ];
 
 export const mainPanesData = [
