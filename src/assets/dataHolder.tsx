@@ -5,7 +5,7 @@ export const headerLinks = [
   {content: "Про нас", link: "#"},
   {content: "З'єднатися з нами", link: "/contact", outline: true},
 ];
-
+export const filters = [{title: "All", id: 0}, {title: "All2", id: 1}]
 export const mainPanesData = [
   {
     imageLink:
