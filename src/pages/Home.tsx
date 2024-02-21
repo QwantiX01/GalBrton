@@ -20,7 +20,11 @@ function Home() {
         ></Banner>
         <PaneHolder/>
         <div className="flex pt-10 mb-10">
-          <Banner image="" description="" title="" link={<></>}/>
+          <Banner
+            image="linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)),url('https://blog.architizer.com/wp-content/uploads/bf365638-1-scaled.jpg')"
+            description=""
+            title="" link={<></>}
+          />
           <div className="ml-8 w-3/4 flex flex-col place-content-center items-start">
             <div className="font-black text-5xl mb-4">Спеціальні пропозиції</div>
             <p className="mb-8">Отримайте знижку 10% на перше замовлення</p>
@@ -29,12 +33,7 @@ function Home() {
             </OutlineLink>
           </div>
         </div>
-        <h1 className="text-4xl font-bold mb-4 text-center">Про ГалБетон</h1>
-        <p className={"text-xl text-center"}>
-          Галбетон - провідний виробник високоякісних бетонних виробів. Ми пропонуємо широкий вибір текстур, що дозволяє
-          легко знайти ідеальне рішення для вашого проекту. Наша команда експертів готова
-          допомогти вам на кожному етапі, від проектування до монтажу. Незалежно від того, чи ви домовласник, підрядник
-          або архітектор, у нас є продукти та досвід, необхідні для втілення вашого бачення в життя.</p>
+
         <div className="text-center mt-20 mb-10">
           <h1 className="text-4xl font-black mb-4">Готові розпочати?</h1>
           <OutlineLink link={"#"} isOutline={true}>Отримати пропозицію</OutlineLink>
