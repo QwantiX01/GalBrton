@@ -1,11 +1,8 @@
 import Banner from "../components/Banner.tsx";
 import ProductsHolder from "../components/Products/ProductsHolder.tsx";
 import "axios";
-import axios from "axios";
 
 const Products = () => {
-    const r = axios.get("http://localhost:1323/products")
-    console.log(r)
 
     return (
         <>
