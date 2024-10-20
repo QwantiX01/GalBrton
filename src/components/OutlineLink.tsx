@@ -13,7 +13,7 @@ const OutlineLink = ({
   return (
     <>
       <Link
-        className={`text-sm font-medium  ${
+        className={`text-lg font-medium  ${
           isOutline ? "bg-white text-black px-4 py-2 rounded-xl font-black" : ""
         }`}
         to={link}

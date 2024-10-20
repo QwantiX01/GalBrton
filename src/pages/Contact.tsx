@@ -1,9 +1,7 @@
 import ContactForm from "../components/Forms/ContactForm";
 import ContactInfo from "../components/Forms/ContactInfo";
 
-interface ContactProps {}
-
-const Contact = ({}: ContactProps) => {
+const Contact = () => {
   return (
     <>
       <main className="mx-56 mt-9 p-6">
@@ -15,25 +13,29 @@ const Contact = ({}: ContactProps) => {
           нетерпінням чекаємо на ваш дзвінок
         </p>
         <h1 className="mt-8 text-2xl font-bold">Заповніть форму:</h1>
-        <ContactForm />
-        <h1 className="my-8 text-2xl font-bold">
-          Або зв'яжіться з нами особисто
-        </h1>
-        <ContactInfo
-          icon="call"
-          title={"123-456-7891"}
-          description={"8:00 - 17:00"}
-        />
-        <ContactInfo
-          icon="send"
-          title={"Email"}
-          description={"qwantiix01@gmail.com"}
-        />
-        <ContactInfo
-          icon="location_on"
-          title={"Адреса"}
-          description={"вул. Луганська 123"}
-        />
+        <div className="flex">
+          <ContactForm />
+          <div className="ml-8">
+            <h1 className="my-8 text-2xl font-bold">
+              Або зв'яжіться з нами особисто
+            </h1>
+            <ContactInfo
+              icon="call"
+              title={"123-456-7891"}
+              description={"8:00 - 17:00"}
+            />
+            <ContactInfo
+              icon="send"
+              title={"Email"}
+              description={"qwantiix01@gmail.com"}
+            />
+            <ContactInfo
+              icon="location_on"
+              title={"Адреса"}
+              description={"вул. Луганська 123"}
+            />
+          </div>
+        </div>
       </main>
     </>
   );
