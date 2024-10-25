@@ -1,21 +1,9 @@
-import { useRef } from "react";
-import { json } from "react-router";
-
 interface ContactFormProps {}
-
-const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-  event.preventDefault();
-
-  const data = new FormData(event.target);
-
-  let value = Object.fromEntries(data.entries());
-  JSON.stringify(value);
-};
 
 const ContactForm = ({}: ContactFormProps) => {
   return (
     <div className="flex items-end">
-      <form onSubmit={(e) => onSubmit(e)}>
+      <form>
         <div className="mt-8 w-min border-solid border-gray-600 border-[1px] rounded-xl p-5">
           <div className="flex flex-col gap-4">
             <div className="flex gap-6">
