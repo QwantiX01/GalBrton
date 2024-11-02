@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--background-primary);
+  color: var(--foreground-primary);
+
+  --accent-color: #2563eb;
+  --foreground-primary: #dddddd;
+  --background-primary: #000;
+  --background-secondary: #171717;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-icon{
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  color: var(--accent-color);
+}
