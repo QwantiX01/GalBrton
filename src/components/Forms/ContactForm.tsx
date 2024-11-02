@@ -4,7 +4,7 @@ const ContactForm = ({}: ContactFormProps) => {
   return (
     <div className="flex items-end">
       <form>
-        <div className="mt-8 w-min border-solid border-gray-600 border-[1px] rounded-xl p-5">
+        <div className="mt-8 w-min border-solid border-shark-950 border-2 rounded-xl p-5">
           <div className="flex flex-col gap-4">
             <div className="flex gap-6">
               <div className="flex flex-col items-start gap-4">
@@ -14,7 +14,7 @@ const ContactForm = ({}: ContactFormProps) => {
                 <input
                   name="firstName"
                   id="firstName"
-                  className="focus: outline-none bg-black px-3 py-4 border-solid border-gray-600 border-[1px] rounded-xl"
+                  className="focus: outline-none bg-black px-3 py-4 border-solid border-shark-950 border-2 rounded-xl"
                   placeholder="Ваше ім'я"
                   type="text"
                 />
@@ -26,7 +26,7 @@ const ContactForm = ({}: ContactFormProps) => {
                 <input
                   name="lastName"
                   id="lastName"
-                  className="focus: outline-none bg-black px-3 py-4 border-solid border-gray-600 border-[1px] rounded-xl"
+                  className="focus: outline-none bg-black px-3 py-4 border-solid border-shark-950 border-2 rounded-xl"
                   placeholder="Ваше Прізвище"
                   type="text"
                 />
@@ -38,7 +38,7 @@ const ContactForm = ({}: ContactFormProps) => {
             <input
               name="number"
               id="number"
-              className="focus: outline-none bg-black px-3 py-4 border-solid border-gray-600 border-[1px] rounded-xl"
+              className="focus: outline-none bg-black px-3 py-4 border-solid border-shark-950 border-2 rounded-xl"
               placeholder="Ваш номер телефону"
               type="text"
             />
@@ -48,7 +48,7 @@ const ContactForm = ({}: ContactFormProps) => {
             <input
               name="email"
               id="email"
-              className="focus: outline-none bg-black px-3 py-4 border-solid border-gray-600 border-[1px] rounded-xl"
+              className="focus: outline-none bg-black px-3 py-4 border-solid border-shark-950 border-2 rounded-xl"
               placeholder="Ваша електронна пошта"
               type="text"
             />
@@ -58,7 +58,7 @@ const ContactForm = ({}: ContactFormProps) => {
             <textarea
               name="message"
               id="message"
-              className="focus: outline-none bg-black px-3 py-4 border-solid border-gray-600 border-[1px] rounded-xl h-52 break-words"
+              className="focus: outline-none bg-black px-3 py-4 border-solid border-shark-950 border-2 rounded-xl h-52 break-words"
               placeholder="Введіть ваше повідомлення..."
             />
           </div>

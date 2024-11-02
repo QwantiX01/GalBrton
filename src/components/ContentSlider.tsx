@@ -1,6 +1,6 @@
 ﻿import { useState } from "react";
-import leftArrow from "../assets/arrow-alt-circle-left.svg";
-import rightArrow from "../assets/arrow-alt-circle-right.svg";
+import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
+
 export interface ISlide {
   title: string;
   image: string;
@@ -12,6 +12,7 @@ interface ISlider {
 }
 
 function ContentSlider({ slides }: ISlider) {
+  console.log("Render!");
   const [id, setId] = useState(0);
   const image = slides[id].image;
   const title = slides[id].title;
@@ -30,29 +31,38 @@ function ContentSlider({ slides }: ISlider) {
       <div>
         <div className="flex gap-6">
           <div className="flex-[3] w-full flex relative items-center">
-            <button className="absolute left-4" onClick={PrevSlide}>
-              <img
-                className="w-6 h-6 bg-white rounded-full"
-                src={leftArrow}
-                alt=""
-              />
+            <button
+              key={Math.random()}
+              className="absolute left-4 animate-bounce-left"
+              onClick={PrevSlide}
+            >
+              <CircleChevronLeft className="text-black" strokeWidth={3} />
             </button>
             <img
               className="w-full aspect-video rounded-2xl"
               src={image}
               alt=""
             />
-            <button className="absolute right-4" onClick={NextSlide}>
-              <img
-                className="w-6 h-6 bg-white rounded-full"
-                src={rightArrow}
-                alt=""
-              />
+            <button
+              key={Math.random()}
+              className="absolute right-4 animate-bounce-right"
+              onClick={NextSlide}
+            >
+              <CircleChevronRight className="text-black " strokeWidth={3} />
             </button>
           </div>
-          <div className="flex-[2] flex-col justify-between">
-            <h1 className="font-bold text-6xl mb-6 ">{title}</h1>
-            <p className="text-lg border-white border-2 border-solid rounded-2xl  p-8">
+
+          <div className="flex-[2] flex-col justify-between ">
+            <h1
+              key={Math.random()}
+              className="font-bold text-6xl mb-6 animate-fade-m"
+            >
+              {title}
+            </h1>
+            <p
+              key={Math.random()}
+              className="text-lg bg-shark-950 text-alto-200 rounded-2xl animate-fade-in p-8"
+            >
               {description}
             </p>
           </div>

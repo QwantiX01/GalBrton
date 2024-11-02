@@ -1,31 +1,26 @@
-import { Link } from "react-router-dom";
-
 interface LinkProps {
-  link: string;
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  action: Function;
   children: string;
   isOutline: boolean;
-  enable: boolean;
+  disabled: boolean;
 }
 
 const OutlineLink = ({
-  link = "#",
+  action,
   children,
   isOutline = false,
-  enable = true,
+  disabled = true,
 }: LinkProps) => {
   const styles = `text-lg font-medium  ${
     isOutline ? "bg-alto-200 text-black px-4 py-2 rounded-lg font-black" : ""
   }`;
-  return enable ? (
+  return (
     <>
-      <Link className={styles} to={link}>
+      <button disabled={disabled} className={styles} onClick={() => action()}>
         {children}
-      </Link>
+      </button>
     </>
-  ) : (
-    <div className={styles} style={{ backgroundColor: "gray" }}>
-      {children}
-    </div>
   );
 };
 
